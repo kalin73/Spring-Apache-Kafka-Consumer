@@ -13,7 +13,6 @@ public class ExRatesConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(ExRatesConsumer.class);
 
     @KafkaListener(
-            containerFactory = "kafkaContainerFactory",
             topics = "exchange_rates",
             groupId = "softuni-consumer"
     )
